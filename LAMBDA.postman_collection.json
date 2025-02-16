@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "835ca297-03a6-488c-984f-cdfbcd89ae91",
+		"name": "LAMBDA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24820842"
+	},
+	"item": [
+		{
+			"name": "[GET] /youtube",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://9k32ise1n0.execute-api.sa-east-1.amazonaws.com/dev/youtube",
+					"protocol": "https",
+					"host": [
+						"9k32ise1n0",
+						"execute-api",
+						"sa-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"youtube"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] /youtube/:nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://9k32ise1n0.execute-api.sa-east-1.amazonaws.com/dev/youtube/{nome}",
+					"protocol": "https",
+					"host": [
+						"9k32ise1n0",
+						"execute-api",
+						"sa-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"youtube",
+						"{nome}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] /youtube",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Kevin\",\r\n\t\"idade\": 28\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://9k32ise1n0.execute-api.sa-east-1.amazonaws.com/dev/youtube",
+					"protocol": "https",
+					"host": [
+						"9k32ise1n0",
+						"execute-api",
+						"sa-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"youtube"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
