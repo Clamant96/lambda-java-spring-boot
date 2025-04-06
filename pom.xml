@@ -28,7 +28,14 @@
 		<dependency>
 			<groupId>br.com.helpconnect.models</groupId>
 			<artifactId>Models</artifactId>
-			<version>0.0.1</version> <!-- Referencia ao módulo confluenceTeste -->
+			<version>0.0.1</version> <!-- Referencia ao módulo models -->
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>br.com.helpconnect.repositorys.repository</groupId>
+			<artifactId>Repository</artifactId>
+			<version>0.0.1</version> <!-- Referencia ao módulo repositorys -->
 			<scope>provided</scope>
 		</dependency>
 		
@@ -68,6 +75,23 @@
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
+        
+        <!-- Outras dependências que suas models possam precisar -->
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
     </dependencies>
 
     <dependencyManagement>
